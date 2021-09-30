@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Snackbar from "./components/Snackbar";
 
 function App() {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p onClick={() => setOpenModal(true)}>Welcome to my library.</p>
+      <Snackbar
+        open={openModal}
+        handleClose={() => setOpenModal(false)}
+        type="error"
+        text="ola"
+        duration={2000}
+      />
     </div>
   );
 }

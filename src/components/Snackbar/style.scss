@@ -1,0 +1,26 @@
+.alert-error {
+  width: 448px;
+  height: 48px;
+  background-color: rgb(253, 33, 33);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+.alert-success {
+  width: 448px;
+  height: 48px;
+  background-color: rgb(0, 255, 85);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: #fff;
+    font-weight: bold;
+  }
+}
